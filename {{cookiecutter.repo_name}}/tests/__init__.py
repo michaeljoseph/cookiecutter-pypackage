@@ -1,4 +1,4 @@
-from unittest2 import TestCase
+from {{cookiecutter.repo_name}}.compat import TestCase
 
 
 class BaseTestCase(TestCase):

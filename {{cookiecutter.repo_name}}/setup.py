@@ -15,7 +15,7 @@ setup(
     packages=['{{cookiecutter.repo_name}}'],
     include_package_data=True,
     install_requires=[
-    {% if cookiecutter.include_cli == 'yes' %}    'docopt < 1.0.0'{% endif %}
+    {% if cookiecutter.include_cli == 'yes' %}    'click < 2.1.0'{% endif %}
     ],
     {% if cookiecutter.include_cli == 'yes' %}entry_points={
         'console_scripts': [

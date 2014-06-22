@@ -11,5 +11,5 @@ metadata = dict(re.findall(
 ))
 
 with open('requirements.txt', 'r') as f:
-    if 'docopt' not in f.read():
+    if 'click' not in f.read():
         os.remove('%s/%s/cli.py' % (module_dir, metadata['name']))
